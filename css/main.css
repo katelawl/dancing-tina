@@ -1,0 +1,146 @@
+/* line 5, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 1, ../scss/_base.scss */
+#button {
+  top: 10px;
+  right: 10px;
+  position: absolute;
+}
+
+/* line 6, ../scss/_base.scss */
+.girl {
+  background: url(../img/girl-walking.png) repeat;
+  width: 250px;
+  height: 400px;
+  margin: 10px 10px -40px 10px;
+  animation: dance 1.5s steps(5) infinite;
+  display: inline-block;
+}
+
+/* line 15, ../scss/_base.scss */
+.twogirl {
+  width: 500px;
+  height: 800px;
+}
+
+/* line 19, ../scss/_base.scss */
+.fourgirl {
+  width: 1250px;
+  height: 1200px;
+  transform: scale(0.65);
+}
+
+/* line 24, ../scss/_base.scss */
+.lotsgirl {
+  width: 5000px;
+  height: 4000px;
+  transform: scale(0.2);
+}
+
+@-webkit-keyframes dance {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: -1280px 0;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+/* line 58, ../scss/_base.scss */
+.hint h1 {
+  transition: opacity 1.2s ease-out, font-size .001ms;
+  opacity: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  width: 900px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -38px;
+  margin-left: -6em;
+}
+
+/* line 73, ../scss/_base.scss */
+#impress .active .hint h1 {
+  animation: fadeIn 1s 5s ease-in forwards;
+  -webkit-animation: fadeIn 1s 5s ease-in forwards;
+}

@@ -1,0 +1,76 @@
+#button {
+	top: 10px;
+	right:10px;
+	position: absolute;
+}
+.girl {
+	background:url(../img/girl-walking.png) repeat;
+	width:250px;
+	height:400px;
+	margin:10px 10px -40px 10px;
+	animation: dance 1.5s steps(5) infinite;
+	display: inline-block;
+} 
+
+.twogirl {
+	width:500px;
+	height:800px;
+}
+.fourgirl {
+	width:1250px;
+	height:1200px;
+	transform: scale(.65);
+}
+.lotsgirl {
+	width:5000px;
+	height:4000px;
+	transform: scale(.2);
+}
+
+@-webkit-keyframes dance {
+	from{
+		background-position: 0 0;
+	}
+	to{
+		background-position:-1280px 0;
+	}
+}
+
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+.hint h1{
+  transition: opacity 1.2s ease-out, font-size .001ms;
+  opacity: 0;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2em;
+  width: 900px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: -38px;
+  margin-left: -6em;
+}
+
+
+#impress .active .hint h1 {
+  animation: fadeIn 1s 5s ease-in forwards;
+  -webkit-animation: fadeIn 1s 5s ease-in forwards;
+}
